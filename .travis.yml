@@ -40,6 +40,10 @@ addons:
 os:
   - linux
   - osx
+  
+arch:
+  - amd64
+  - ppc64le
 
 env:
   matrix:
