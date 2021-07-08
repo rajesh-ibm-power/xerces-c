@@ -11,7 +11,7 @@
 language: c
 
 sudo: false
-dist: bionic
+dist: focal
 
 cache:
   directories:
