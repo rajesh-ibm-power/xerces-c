@@ -40,8 +40,6 @@ addons:
 os:
   - linux
   - osx
-  
-
 
 env:
   matrix:
