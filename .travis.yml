@@ -73,7 +73,7 @@ matrix:
 
 jobs:
   allow_failures:
-  - os: osx
+    - os: osx
   
 script:
   - ./scripts/ci-travis "$BUILD" "$TOOL" "$TYPE" "$MUTEXMGR" "$NETWORK" "$NETACCESSOR" "$MSGLOADER" "$TRANSCODER" "$XMLCH"
