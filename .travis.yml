@@ -44,10 +44,6 @@ addons:
 os:
   - linux
   - osx
-  
-jobs:
-  allow_failures:
-  - os: osx
 
 env:
   matrix:
@@ -75,5 +71,9 @@ matrix:
     - os: osx
       env: BUILD=cmake TOOL="Ninja" TYPE=Debug MUTEXMGR=nothreads
 
+jobs:
+  allow_failures:
+  - os: osx
+  
 script:
   - ./scripts/ci-travis "$BUILD" "$TOOL" "$TYPE" "$MUTEXMGR" "$NETWORK" "$NETACCESSOR" "$MSGLOADER" "$TRANSCODER" "$XMLCH"
